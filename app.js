@@ -1,12 +1,15 @@
 const path = require('path');
+
 const express = require('express');
-const { stringify } = require('querystring');
+
 
 const app = express();
+
+app.use(express.static('public'))
 //3000
 app.get('/', function(req, res){
-  const indexFilePath = path.join(__dirname, 'views', 'index.html')
-  res.sendFile(indexFilePath)
+  const htmlFilePath = path.join(__dirname, 'views', 'index.html')
+  res.sendFile(htmlFilePath)
 })
 
 app.get('/restaurants', function(req, res){
@@ -15,22 +18,19 @@ app.get('/restaurants', function(req, res){
 })
 
 app.get('/recommend', function(req, res){
-  const recommendFilePath = path.join(__dirname, 'views', 'recommend.html')
+  const htmlFilePath = path.join(__dirname, 'views', 'recommend.html')
+  res.sendFile(htmlFilePath)
 })
 
 app.get('/confirm', function(req, res){
-  const confirmFilePath = path.join(__dirname, 'views', 'confirm.html')
-  res.sendFile(confirmFilePath)
+  const htmlFilePath = path.join(__dirname, 'views', 'confirm.html')
+  res.sendFile(htmlFilePath)
 })
 
 app.get('/about', function(req, res){
-  const aboutFilePath = path.join(__dirname, 'views', 'about.html')
-  res.sendFile(aboutFilePath)
+  const htmlFilePath = path.join(__dirname, 'views', 'about.html')
+  res.sendFile(htmlFilePath)
 })
 
-
-
-
- 
 app.listen(3000)
 
