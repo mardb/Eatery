@@ -19,5 +19,12 @@
     "cuisine": "reptilian",
     "website": "https://www.outtathisworld.com",
     "description": "testing once again for the alien friends"
+  },
+  {
+    "name": "3rd one",
+    "address": "33 third st.",
+    "cuisine": "mexican",
+    "website": "https://www.thr33.com",
+    "description": "its so goood!!!"
   }
 ]
