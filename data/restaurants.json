@@ -1,0 +1,23 @@
+[
+  {
+    "name": "TEST",
+    "address": "123 test ave, Test ",
+    "cuisine": "Italian",
+    "website": "https://www.test.com",
+    "description": "this is a test!!!"
+  },
+  {
+    "name": "2nd restaurant",
+    "address": "222 two ave",
+    "cuisine": "mexican",
+    "website": "https://www.two.com",
+    "description": "because its amazing!"
+  },
+  {
+    "name": "ta ta ta ",
+    "address": "bababa",
+    "cuisine": "reptilian",
+    "website": "https://www.outtathisworld.com",
+    "description": "testing once again for the alien friends"
+  }
+]
